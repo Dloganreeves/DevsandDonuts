@@ -1,0 +1,10 @@
+<table>
+<th>First Name:</th>
+<th>Last Name:</th>
+<th>Innovation</th>
+<th>Year:</th>
+
+@for (d of devresult.complete; track $index) {
+<tr><app-singledev [displaydev]="d"></app-singledev></tr>
+}
+</table>
